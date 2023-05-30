@@ -41,6 +41,19 @@ dependencies {
     implementation(UiDependencies.appcompat)
     implementation(UiDependencies.material)
     implementation(UiDependencies.constraintLayout)
+    implementation(UiDependencies.paging)
+
+    // Square
+    implementation(CoreDependencies.retrofit)
+    implementation(CoreDependencies.retrofitSerialization)
+    implementation(CoreDependencies.okhttp3)
+
+    // JetBrains
+    implementation(CoreDependencies.jsonSerialization)
+    implementation(CoreDependencies.coroutines)
+
+    // Koin
+    implementation(CoreDependencies.koin)
 
     testImplementation(TestDependencies.junit)
     androidTestImplementation(TestDependencies.androidxJunit)
