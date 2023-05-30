@@ -1,4 +1,4 @@
-package com.example.series
+package com.nacarseven.series
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

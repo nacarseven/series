@@ -1,4 +1,4 @@
-package com.example.series
+package com.nacarseven.series
 
 import org.junit.Test
 
