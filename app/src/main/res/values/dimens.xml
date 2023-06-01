@@ -28,4 +28,7 @@
     <dimen name="spacing_10">80dp</dimen>
     <dimen name="spacing_11">88dp</dimen>
     <dimen name="spacing_12">96dp</dimen>
+
+    <dimen name="img_series_width">200dp</dimen>
+    <dimen name="img_series_height">300dp</dimen>
 </resources>
