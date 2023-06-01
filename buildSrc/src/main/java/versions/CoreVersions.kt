@@ -8,5 +8,6 @@ object CoreVersions {
     const val jsonSerialization = "1.3.3"
     const val coroutines = "1.6.1"
     const val koin = "3.2.0"
+    const val paging = "3.1.0"
 
 }

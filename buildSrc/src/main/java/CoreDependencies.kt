@@ -8,4 +8,5 @@ object CoreDependencies {
     val jsonSerialization by lazy { "org.jetbrains.kotlinx:kotlinx-serialization-json:${CoreVersions.jsonSerialization}" }
     val coroutines by lazy { "org.jetbrains.kotlinx:kotlinx-coroutines-android:${CoreVersions.coroutines}" }
     val koin by lazy { "io.insert-koin:koin-android:${CoreVersions.koin}" }
+    val paging by lazy {"androidx.paging:paging-runtime:${CoreVersions.paging}"}
 }
