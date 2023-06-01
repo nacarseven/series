@@ -1,9 +1,15 @@
 plugins {
     id("com.android.application")
     id("kotlin-android")
+    id("kotlin-parcelize")
+    id("org.jetbrains.kotlin.android")
+    id("org.jetbrains.kotlin.plugin.serialization") version ("1.6.21")
 }
 
 android {
+    buildFeatures {
+        viewBinding = true
+    }
     defaultConfig {
         applicationId = "com.nacarseven.series"
         minSdk = AndroidConfigVersions.minSdkVersion
@@ -37,11 +43,13 @@ android {
 
 dependencies {
 
+    implementation(CoreDependencies.paging)
     implementation(CoreDependencies.coreKtx)
     implementation(UiDependencies.appcompat)
     implementation(UiDependencies.material)
     implementation(UiDependencies.constraintLayout)
     implementation(UiDependencies.paging)
+    implementation(UiDependencies.glide)
 
     // Square
     implementation(CoreDependencies.retrofit)
