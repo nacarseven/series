@@ -1,7 +1,6 @@
 package com.nacarseven.series.presentation.serieslist
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
@@ -10,6 +9,7 @@ import androidx.paging.CombinedLoadStates
 import androidx.paging.LoadState
 import com.nacarseven.series.R
 import com.nacarseven.series.databinding.FragmentSeriesListBinding
+import com.nacarseven.series.presentation.SeriesOnClickListener
 import com.nacarseven.series.presentation.model.SeriesUi
 import com.nacarseven.series.presentation.serieslist.adapter.SeriesListAdapter
 import com.nacarseven.series.presentation.serieslist.adapter.SeriesLoadStateAdapter
@@ -20,7 +20,8 @@ import org.koin.androidx.viewmodel.ext.android.viewModel
 
 private const val ZERO_VALUE = 0
 
-class SeriesListFragment : Fragment(R.layout.fragment_series_list) {
+class SeriesListFragment(private val seriesOnClickListener: SeriesOnClickListener) :
+    Fragment(R.layout.fragment_series_list) {
 
     private val viewModel: SeriesListViewModel by viewModel()
     private val binding: FragmentSeriesListBinding by viewBinding()
@@ -44,7 +45,7 @@ class SeriesListFragment : Fragment(R.layout.fragment_series_list) {
     }
 
     private fun onItemClick(seriesUi: SeriesUi) {
-       Log.d(seriesUi.name, "")
+        seriesOnClickListener.onItemSeriesClicked(seriesUi)
     }
 
     private fun renderUi(loadState: CombinedLoadStates) {

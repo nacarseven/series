@@ -19,7 +19,7 @@ class SeriesListAdapter(private val onItemClick: (SeriesUi) -> Unit) :
             )
         )
 
-        holder.binding.root.setOnClickListener { view ->
+        holder.binding.root.setOnClickListener {
             getItem(holder.adapterPosition)?.let {
                 onItemClick.invoke(it)
             }
@@ -43,9 +43,9 @@ class SeriesViewHolder(
                 nameSeries.text = it.name
                 Glide.with(binding.root.context).load(it.image).into(imgSeries)
 
-                root.setOnClickListener {
-                    onItemClick.invoke(seriesUi)
-                }
+//                root.setOnClickListener {
+//                    onItemClick.invoke(seriesUi)
+//                }
             }
         }
     }
