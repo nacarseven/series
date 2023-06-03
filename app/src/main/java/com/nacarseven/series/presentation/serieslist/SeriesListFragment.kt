@@ -38,8 +38,7 @@ class SeriesListFragment(private val seriesOnClickListener: SeriesOnClickListene
         with(binding) {
             rvSeries.adapter = seriesListAdapter.withLoadStateHeaderAndFooter(
                 header = SeriesLoadStateAdapter { seriesListAdapter.retry() },
-                footer = SeriesLoadStateAdapter { seriesListAdapter.retry() }
-            )
+                footer = SeriesLoadStateAdapter { seriesListAdapter.retry() })
             seriesListAdapter.addLoadStateListener { loadState -> renderUi(loadState) }
         }
     }

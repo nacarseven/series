@@ -18,6 +18,7 @@ import com.nacarseven.series.data.repository.SeriesRepositoryImpl
 import com.nacarseven.series.domain.repository.SeriesRepository
 import com.nacarseven.series.domain.usecase.GetSeriesDetailUseCase
 import com.nacarseven.series.domain.usecase.GetSeriesUseCase
+import com.nacarseven.series.presentation.seriesdetail.SeriesDetailViewModel
 import com.nacarseven.series.presentation.serieslist.SeriesListViewModel
 import kotlinx.serialization.ExperimentalSerializationApi
 import org.koin.android.BuildConfig
@@ -72,5 +73,11 @@ private fun Module.presentation() {
     factory { GetSeriesDetailUseCase(repository = get()) }
     factory { GetSeriesUseCase(repository = get()) }
     viewModel { SeriesListViewModel(getSeriesUseCase = get()) }
+    viewModel{(id: Long) ->
+        SeriesDetailViewModel(
+            seriesUiId = id,
+            getSeriesDetailUseCase = get()
+        )
+    }
 }
 

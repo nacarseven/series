@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main), SeriesOnClickLis
 
     override fun onItemSeriesClicked(seriesUi: SeriesUi) {
         supportFragmentManager.beginTransaction()
-            .replace(R.id.fragmentContainerView, SeriesDetailFragment())
+            .add(R.id.fragmentContainerView, SeriesDetailFragment().newInstance(seriesUi.id))
             .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
             .commitAllowingStateLoss()
     }
