@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">series</string>
+    <string name="series_list_title">Lista de séries</string>
 </resources>
