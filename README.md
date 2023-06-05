@@ -20,6 +20,8 @@ Exibição de uma lista paginada de dados vindos de uma API.
 Detalhes dos itens da lista ao serem selecionados.
 Tratamento de erros e exibição de mensagens de erro.
 
+[device-2023-06-05-102200.webm](https://github.com/nacarseven/series/assets/11820477/73443823-1478-4984-95c5-8317ffe7645c)
+
 ## Estrutura do Projeto
 
 <img width="332" alt="Captura de Tela 2023-06-05 às 10 06 52 AM" src="https://github.com/nacarseven/series/assets/11820477/76914114-64ed-4681-85b8-a6a9319af346">
