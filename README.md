@@ -22,7 +22,7 @@ Tratamento de erros e exibição de mensagens de erro.
 
 ## Estrutura do Projeto
 
-<img width="332" alt="Captura de Tela 2023-06-05 às 10 06 52 AM" src="https://github.com/nacarseven/series/assets/11820477/162e6ed6-825e-4fa8-9551-8e08e220c43f">
+<img width="332" alt="Captura de Tela 2023-06-05 às 10 06 52 AM" src="https://github.com/nacarseven/series/assets/11820477/76914114-64ed-4681-85b8-a6a9319af346">
 
 ## Instalação e Configuração
 
