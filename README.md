@@ -22,8 +22,7 @@ Tratamento de erros e exibição de mensagens de erro.
 
 ##Estrutura do Projeto
 
-![](../../../../var/folders/pp/5kgq0_sd5h72twnwshxz47h80000gp/T/TemporaryItems/NSIRD_screencaptureui_Isu4i5/Captura de Tela 2023-06-05 às 10.07.11 AM.png)
-
+<img width="332" alt="Captura de Tela 2023-06-05 às 10 06 52 AM" src="https://github.com/nacarseven/series/assets/11820477/162e6ed6-825e-4fa8-9551-8e08e220c43f">
 
 ## Instalação e Configuração
 
