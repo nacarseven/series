@@ -26,6 +26,11 @@ Tratamento de erros e exibição de mensagens de erro.
 
 <img width="332" alt="Captura de Tela 2023-06-05 às 10 06 52 AM" src="https://github.com/nacarseven/series/assets/11820477/76914114-64ed-4681-85b8-a6a9319af346">
 
+## Próximas versões
+- add testes unitários
+- compose
+- modularização
+
 ## Instalação e Configuração
 
 1. Clone este repositório para sua máquina local.
